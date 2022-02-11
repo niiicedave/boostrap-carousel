@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/f3f3d58c50.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,10 +19,161 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Boostrap Carousel</title>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <!--data--bs-ride-->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./IMG/IMG1.png"
+            class="d-block w-100"
+            alt="Clovis and Shaw Avenues in Clovis"
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>I took a walk on the Clovis Old Town Trail.</h5>
+            <p>
+              The trail is a paved pedestrian path that follows the old narrow
+              gauge railroad route that used to the serve the stone fruit farms
+              north of the Old Town. The tracks got torn out and converted into
+              a walking path.
+            </p>
+          </div>
+          <!--/caption-->
+        </div>
+        <!--/carousel-item-->
+
+        
+      <div class="carousel-item">
+        <img src="./IMG/IMG2.png" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>My Walk Became Educational</h5>
+          <p>I saw a display about the Japenese farnmers who settled the Clovis area over a century ago. Takahashi Farms
+            had a popular Clovis produce market.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./IMG/IMG3.png" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>TThen I saw a cool clqssic car.</h5>
+          <p>And it was parked next to a great microbrewery.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./IMG/IMG4.png" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Then I passed by the Rodeo Grounds</h5>
+          <p>The grounds are located where the log flume terminated.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./IMG/IMG5.png" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Eventually I wound up in Old Town</h5>
+          <p>And there I had some lunch. It was okay.</p>
+        </div>
+      </div>
+
+    </div>
+    
+  
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span>
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="bi bi-arrow-left-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span>
+            <span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="bi bi-arrow-right-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--/data-ride-->
 
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script
