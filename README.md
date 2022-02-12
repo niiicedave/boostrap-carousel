@@ -2,7 +2,7 @@
 
 ## Description
 
-A basic bootstrap boilerplate to start a mobile-friendly website
+I guess you could call this a Bootstrap carousel. It's mostly Bootstrap. 
 
 ## Prerequistes
 
