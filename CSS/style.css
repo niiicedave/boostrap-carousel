@@ -17,13 +17,14 @@
     height: 100vh;
 }
 
-h5{
+h5 {
     font-family: 'Permanent Marker', cursive;
 }
 
-p{
+p {
     font-family: 'Fira Sans Condensed', sans-serif;
     letter-spacing: .003em;
+    font-size: larger;
 }
 
 
